@@ -1,0 +1,29 @@
+@use '../../shared/mixins/flex' as flex_mixins;
+@use '../../shared/extends/flex';
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    header {
+    }
+    #header_firstPart {
+        &_menu {
+        }
+        &_appLogo {
+        }
+    }
+    #header_secondPart {
+        &_wrapper {
+            &_otherLogos {
+                img {
+                }
+            }
+            &_userIcon {
+            }
+        }
+    }
+    #search_container {
+        &_field {
+        }
+        &_logo {
+        }
+    }
+}

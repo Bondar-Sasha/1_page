@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+   all: unset;
+   box-sizing: border-box;
+}
+title {
+   display: none;
+}
+
+ul[class],
+ol[class] {
+   padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+   margin: 0;
+}
+
+body {
+   min-height: 100vh;
+   scroll-behavior: smooth;
+   text-rendering: optimizeSpeed;
+   line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+   list-style: none;
+}
+
+a:not([class]) {
+   text-decoration-skip-ink: auto;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+article > * + * {
+   margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+   * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+   }
+}
+
+:root{--font_26: 26px;--font_18: 18px;--font_16: 16px;--font_13: 13px}html{width:100vw;font-family:"Mulish",sans-serif}body{width:100%;background:#fff;display:flex;align-items:center;justify-content:space-between;flex-direction:column}body>*{width:100%}
+header {
+}
+#header_firstPart {
+    &_menu {
+    }
+    &_appLogo {
+    }
+}
+#header_secondPart {
+    &_wrapper {
+        &_otherLogos {
+            img {
+            }
+        }
+        &_userIcon {
+        }
+    }
+}
+#search_container {
+    &_field {
+    }
+    &_logo {
+    }
+}
+aside {
+}
+#aside_links {
+    &_major {
+        &_settingsLogoContainer {
+        }
+    }
+    &_other {
+    }
+}
+.aside_styled_link {
+}
+#aside_subscriptions {
+    &_label {
+    }
+    &_container {
+    }
+}
+.aside_sub {
+}
+#aside_otherLinks {
+}
+#main_content {
+    &_authorContent {
+    }
+    &_recommended {
+    }
+    &_other {
+    }
+}
+.section_infHeader {
+}
+.section_inf {
+    &_authorLogo {
+    }
+    &_authorName {
+    }
+}
+.section_navigation {
+}
+.small_videos {
+}
+.small_video {
+    &_wallpaper {
+    }
+}
+.video_inf {
+    &_name {
+    }
+    &_crucial_data {
+        &_views {
+        }
+        &_author {
+        }
+    }
+}
+.big_videos {
+}
+.big_video {
+    &_wallpaper {
+    }
+}
+footer {
+}
+#footer_icons {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

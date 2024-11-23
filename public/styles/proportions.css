@@ -1,0 +1,90 @@
+header {
+}
+#header_firstPart {
+    &_menu {
+    }
+    &_appLogo {
+    }
+}
+#header_secondPart {
+    &_wrapper {
+        &_otherLogos {
+            img {
+            }
+        }
+        &_userIcon {
+        }
+    }
+}
+#search_container {
+    &_field {
+    }
+    &_logo {
+    }
+}
+aside {
+}
+#aside_links {
+    &_major {
+        &_settingsLogoContainer {
+        }
+    }
+    &_other {
+    }
+}
+.aside_styled_link {
+}
+#aside_subscriptions {
+    &_label {
+    }
+    &_container {
+    }
+}
+.aside_sub {
+}
+#aside_otherLinks {
+}
+#main_content {
+    &_authorContent {
+    }
+    &_recommended {
+    }
+    &_other {
+    }
+}
+.section_infHeader {
+}
+.section_inf {
+    &_authorLogo {
+    }
+    &_authorName {
+    }
+}
+.section_navigation {
+}
+.small_videos {
+}
+.small_video {
+    &_wallpaper {
+    }
+}
+.video_inf {
+    &_name {
+    }
+    &_crucial_data {
+        &_views {
+        }
+        &_author {
+        }
+    }
+}
+.big_videos {
+}
+.big_video {
+    &_wallpaper {
+    }
+}
+footer {
+}
+#footer_icons {
+}
