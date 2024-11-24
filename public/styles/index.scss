@@ -13,7 +13,7 @@ html {
 body {
     width: 100%;
     background: rgb(255, 255, 255);
-    @include flex_mixins.center_j_d(space-between, column);
+    @include flex_mixins.center_j_d(initial, column);
 }
 body > * {
     width: 100%;
