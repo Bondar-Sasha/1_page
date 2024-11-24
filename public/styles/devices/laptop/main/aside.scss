@@ -3,6 +3,7 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     aside {
+        display: none;
     }
     #aside_links {
         &_major {
