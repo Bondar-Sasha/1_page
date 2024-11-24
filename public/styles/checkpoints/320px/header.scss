@@ -3,7 +3,6 @@
 
 @media screen and (width: 320px) {
     header {
-        height: 50px;
         padding: 10px 16px 10px 16px;
         @include flex_mixins.center_j_d(space-between);
     }
@@ -13,12 +12,10 @@
         }
         &_appLogo {
             width: 116px;
-            height: 25px;
         }
     }
     #header_secondPart {
         width: 73px;
-        height: 30px;
         @include flex_mixins.center_j_d(space-between);
         &_wrapper {
             &_otherLogos {
@@ -29,7 +26,6 @@
             }
             &_userIcon {
                 width: 30px;
-                height: 30px;
             }
         }
     }
@@ -39,7 +35,6 @@
         }
         &_logo {
             width: 19px;
-            height: 19px;
         }
     }
 }
