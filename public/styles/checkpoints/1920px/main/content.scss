@@ -19,7 +19,7 @@
         &_recommended {
             display: flex;
             flex-direction: column;
-            margin-top: 47px;
+            margin-top: 48px;
         }
         &_other {
             display: flex;
@@ -29,7 +29,7 @@
     }
     .section_infHeader {
         width: 1515px;
-        margin-bottom: 30px;
+        margin-bottom: 28px;
         color: rgb(25, 32, 44);
 
         font-size: var(--font_26);
@@ -103,6 +103,7 @@
         flex-wrap: initial;
     }
     .big_video {
+        width: 540px;
         &_wallpaper {
             // margin-top: 2px;
         }
