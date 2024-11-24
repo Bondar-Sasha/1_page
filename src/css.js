@@ -1,6 +1,7 @@
 import '../public/styles/reset.css'
 import '../public/styles/index.scss'
 import '../public/styles/proportions.scss'
+import '../public/styles/devices/shared.scss'
 
 import '../public/styles/devices/mobile/header.scss'
 import '../public/styles/devices/mobile/main/aside.scss'

@@ -2,44 +2,39 @@
 
 @media screen and (width: 1920px) {
     header {
-        height: 84px;
         padding: 20px 70px 20px 31.86px;
         @include flex_mixins.center_j_d(space-between);
     }
     #header_firstPart {
         width: 164.14px;
-        height: 25px;
         @include flex_mixins.center_j_d(space-between);
         &_menu {
+            width: 20px;
         }
         &_appLogo {
+            width: 116px;
         }
     }
     #header_secondPart {
         width: 1595px;
-        height: 44px;
         @include flex_mixins.center_j_d(space-between);
         &_wrapper {
             width: 260px;
-            height: 40px;
             @include flex_mixins.center_j_d(space-between);
             &_otherLogos {
                 width: 170px;
-                height: 32px;
                 @include flex_mixins.center_j_d(space-between);
                 img {
                 }
             }
             &_userIcon {
                 width: 40px;
-                height: 40px;
             }
         }
     }
     #search_container {
         position: relative;
         width: 830px;
-        height: 44px;
         @include flex_mixins.center_j_d(initial);
 
         &_field {
@@ -55,7 +50,6 @@
             position: absolute;
             right: 18px;
             width: 18.21px;
-            height: 18.21px;
         }
     }
 }
