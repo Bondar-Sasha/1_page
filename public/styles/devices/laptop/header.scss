@@ -22,7 +22,15 @@
         &_wrapper {
             &_otherLogos {
                 display: none;
-                img {
+                &_notificationContainer {
+                    position: relative;
+                    // &_logo {
+                    // }
+                    &_icon {
+                        top: -5px;
+                        left: 8px;
+                        position: absolute;
+                    }
                 }
             }
             &_userIcon {

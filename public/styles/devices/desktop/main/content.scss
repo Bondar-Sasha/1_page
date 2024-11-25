@@ -65,7 +65,12 @@
     }
     .small_video {
         width: clamp(210px, 50%, 310px);
-
+        position: relative;
+        &_time {
+            position: absolute;
+            bottom: 30%;
+            right: 5%;
+        }
         &_wallpaper {
             width: 100%;
             margin-bottom: 8px;
@@ -101,7 +106,12 @@
     }
     .big_video {
         width: clamp(410px, 50%, 520px);
-
+        position: relative;
+        &_time {
+            position: absolute;
+            bottom: 21%;
+            right: 3.5%;
+        }
         &_wallpaper {
             width: 100%;
             // margin-top: 2px;

@@ -24,7 +24,15 @@
             &_otherLogos {
                 width: 170px;
                 @include flex_mixins.center_j_d(space-between);
-                img {
+                &_notificationContainer {
+                    position: relative;
+                    // &_logo {
+                    // }
+                    &_icon {
+                        top: -5px;
+                        left: 8px;
+                        position: absolute;
+                    }
                 }
             }
             &_userIcon {

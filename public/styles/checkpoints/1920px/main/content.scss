@@ -66,14 +66,21 @@
     }
     .small_video {
         width: 250px;
+        position: relative;
+        &_time {
+            position: absolute;
+            bottom: 59px;
+            right: 10px;
+        }
 
         &_wallpaper {
-            margin-bottom: 8px;
+            margin-bottom: 9px;
         }
         &:not(:nth-child(1)) {
             margin-left: 40px;
         }
     }
+
     .video_inf {
         &_name {
             display: flex;
@@ -103,6 +110,12 @@
         flex-wrap: initial;
     }
     .big_video {
+        position: relative;
+        &_time {
+            position: absolute;
+            bottom: 62px;
+            right: 10px;
+        }
         width: 540px;
         &_wallpaper {
             // margin-top: 2px;

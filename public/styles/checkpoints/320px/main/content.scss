@@ -36,6 +36,12 @@
         width: 288px;
         height: 198px;
         margin-bottom: 31px;
+        position: relative;
+        &_time {
+            position: absolute;
+            bottom: 59px;
+            right: 10px;
+        }
         &_wallpaper {
             width: 288px;
             height: 150px;

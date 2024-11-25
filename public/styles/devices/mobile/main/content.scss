@@ -58,7 +58,12 @@
     }
     .small_video {
         width: 90%;
-
+        position: relative;
+        &_time {
+            position: absolute;
+            bottom: 30%;
+            right: 5%;
+        }
         &_wallpaper {
             width: 100%;
             margin-bottom: 8px;
@@ -113,5 +118,17 @@
         font-size: var(--font_16);
         border-radius: 20px;
         width: clamp(154px, 50%, 230px);
+    }
+}
+@media screen and (max-width: 340px) {
+    .small_video {
+        &_time {
+            display: none;
+        }
+    }
+    .video_inf {
+        &_crucial_data {
+            display: none;
+        }
     }
 }
