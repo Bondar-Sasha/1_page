@@ -64,7 +64,7 @@
         flex-wrap: wrap;
     }
     .small_video {
-        width: clamp(230px, 50%, 320px);
+        width: clamp(210px, 50%, 310px);
 
         &_wallpaper {
             width: 100%;
@@ -100,7 +100,7 @@
         flex-wrap: wrap;
     }
     .big_video {
-        width: clamp(430px, 50%, 620px);
+        width: clamp(410px, 50%, 520px);
 
         &_wallpaper {
             width: 100%;
