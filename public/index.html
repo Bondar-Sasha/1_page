@@ -22,16 +22,8 @@
                     <div id="header_secondPart_wrapper_otherLogos">
                         <img src="./data/header/Phone.png" />
                         <img src="./data/header/Combined_Shape.png" />
-                        <div id="header_secondPart_wrapper_otherLogos_notificationContainer">
-                            <img
-                                id="header_secondPart_wrapper_otherLogos_notificationContainer_logo"
-                                src="./data/header/Notification _Icon.png"
-                            />
-                            <img
-                                id="header_secondPart_wrapper_otherLogos_notificationContainer_icon"
-                                src="./data/header/Not_Oval.png"
-                                alt=""
-                            />
+                        <div data-count="3" id="header_secondPart_wrapper_otherLogos_notificationLogo">
+                            <img src="./styles/components/notification/data/ui-11.svg" />
                         </div>
                     </div>
                     <img id="header_secondPart_wrapper_userIcon" src="./data/header/Header_User.png" />
@@ -135,84 +127,273 @@
                             <img class="section_inf_authorLogo" src="./data//main/content/Author.png" />
                             <span class="section_inf_authorName">Dollie Blair</span>
                         </div>
-                        <div class="section_navigation"><img src="./data/main/content/Arrows.png" /></div>
+                        <div class="control-arrows">
+                            <img src="./styles/components/control-arrows/data/Left.svg" alt="" />
+                            <img src="./styles/components/control-arrows/data/Right.svg" alt="" />
+                        </div>
                     </div>
                     <div class="small_videos">
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (0).png" />
-                            <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                            <div class="video_inf">
-                                <p class="video_inf_name">A Brief History Of Creation</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Dollie Blair</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (1).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Selecting The Right Hotel</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        123k views&nbsp;&nbsp;·&nbsp;&nbsp;1 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Dollie Blair</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (2).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Asteroids</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        43k views&nbsp;&nbsp;·&nbsp;&nbsp;12 days ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Dollie Blair</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (3).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Telescopes 101</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        11k views&nbsp;&nbsp;·&nbsp;&nbsp;6 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Dollie Blair</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (4).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Medical Care Is Just</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        18k views&nbsp;&nbsp;·&nbsp;&nbsp;2 days ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Dollie Blair</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (5).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Moon Gazing</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        67k views&nbsp;&nbsp;·&nbsp;&nbsp;4 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Dollie Blair</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -221,48 +402,229 @@
                 <section id="main_content_recommended">
                     <div class="section_infHeader">
                         <div class="section_inf"><span class="section_inf_topic_name">Recommended</span></div>
-                        <div class="section_navigation"><img src="./data/main/content/Arrows.png" /></div>
+                        <div class="control-arrows">
+                            <img src="./styles/components/control-arrows/data/Left.svg" alt="" />
+                            <img src="./styles/components/control-arrows/data/Right.svg" alt="" />
+                        </div>
                     </div>
                     <div class="big_videos">
-                        <div class="big_video">
-                            <img class="big_video_wallpaper" src="./data/main/content/Cover (6).png" />
-                            <img class="big_video_time" src="./data/main/content/Time.png" alt="" />
-
-                            <div class="video_inf">
-                                <p class="video_inf_name">Dude You Re Getting A Telescope</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        34k views&nbsp;&nbsp;·&nbsp;&nbsp;5 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Gussie French</span>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (6).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="big_video">
-                            <img class="big_video_wallpaper" src="./data/main/content/Cover (7).png" />
-                            <img class="big_video_time" src="./data/main/content/Time.png" alt="" />
-
-                            <div class="video_inf">
-                                <p class="video_inf_name">Moon Gazing</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        54k views&nbsp;&nbsp;·&nbsp;&nbsp;11 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Edward Osborne</span>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (7).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="big_video">
-                            <img class="big_video_wallpaper" src="./data/main/content/Cover (8).png" />
-                            <img class="big_video_time" src="./data/main/content/Time.png" alt="" />
-
-                            <div class="video_inf">
-                                <p class="video_inf_name">Moon Gazing</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        125k views&nbsp;&nbsp;·&nbsp;&nbsp;4 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Dollie Blair</span>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="big-video-wrapper">
+                            <div class="big-video">
+                                <div class="big-video-previewContainer">
+                                    <img
+                                        class="big-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (8).png"
+                                    />
+                                    <div class="big-video-previewContainer-timeContainer">
+                                        <span class="big-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="big-video-information">
+                                    <span class="big-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="big-video-information-metricsContainer">
+                                        <span class="big-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="big-video-information-metricsContainer-author">Dollie Blair</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -277,85 +639,298 @@
                         </div>
                         <div class="other_options">
                             <button class="other_subscribe_button">Subscribe 2.3m</button>
-                            <div class="section_navigation"><img src="./data/main/content/Arrows.png" /></div>
+                            <div class="control-arrows">
+                                <img src="./styles/components/control-arrows/data/Left.svg" alt="" />
+                                <img src="./styles/components/control-arrows/data/Right.svg" alt="" />
+                            </div>
                         </div>
                     </div>
                     <div class="small_videos">
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (9).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Astronomy Or Astrology</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        240k views&nbsp;&nbsp;·&nbsp;&nbsp;4 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Food & Drink</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (10).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Advertising Outdoors</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        13k views&nbsp;&nbsp;·&nbsp;&nbsp;15 days ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Food & Drink</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (11).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Radio Astronomy</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        1k views&nbsp;&nbsp;·&nbsp;&nbsp;11 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Food & Drink</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (12).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">A Good Autoresponder</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        45k views&nbsp;&nbsp;·&nbsp;&nbsp;2 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Food & Drink</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (13).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Baby Monitor Technology</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        86k views&nbsp;&nbsp;·&nbsp;&nbsp;7 days ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Food & Drink</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="small_video">
-                            <img class="small_video_wallpaper" src="./data/main/content/Cover (14).png" />
-                            <div class="video_inf">
-                                <img class="small_video_time" src="./data/main/content/Time.png" alt="" />
-                                <p class="video_inf_name">Asteroids</p>
-                                <div class="video_inf_crucial_data">
-                                    <span class="video_inf_crucial_data_views">
-                                        123k views&nbsp;&nbsp;·&nbsp;&nbsp;4 months ago
-                                    </span>
-                                    <span class="video_inf_crucial_data_author">Food & Drink</span>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-video-wrapper">
+                            <div class="small-video">
+                                <div class="small-video-previewContainer">
+                                    <img
+                                        class="small-video-previewContainer-wallpaper"
+                                        src="./data/main/content/Cover (0).png"
+                                    />
+                                    <div class="small-video-previewContainer-timeContainer">
+                                        <span class="small-video-previewContainer-timeContainer-time">4:31</span>
+                                    </div>
+                                </div>
+                                <div class="small-video-information">
+                                    <span class="small-video-information-videoName">A Brief History Of Creation</span>
+                                    <div class="small-video-information-metricsContainer">
+                                        <span class="small-video-information-metricsContainer-views">
+                                            80k views&nbsp;&nbsp;·&nbsp;&nbsp;3 days ago
+                                        </span>
+                                        <span class="small-video-information-metricsContainer-author">
+                                            Dollie Blair
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

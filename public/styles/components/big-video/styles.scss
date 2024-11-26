@@ -1,0 +1,71 @@
+@use '../../shared/mixins/flex' as flex_mixins;
+@use '../../shared/extends/flex';
+
+.big-video {
+    width: 100%;
+    cursor: pointer;
+
+    &-wrapper {
+        width: clamp(540px, 10%, 560px);
+        aspect-ratio: 540 / 300;
+        flex: 0 0 auto;
+        @media screen and (max-width: 700px) {
+            width: clamp(250px, 70%, 500px);
+            aspect-ratio: 288 / 198;
+        }
+    }
+    &-previewContainer {
+        position: relative;
+        width: 100%;
+        &-wallpaper {
+            width: 100%;
+        }
+        &-timeContainer {
+            @extend %full_center;
+            position: absolute;
+            bottom: 5%;
+            right: 2%;
+            aspect-ratio: 47 / 24;
+            width: 47px;
+            border-radius: 12px;
+            background-color: rgb(0, 0, 0);
+            opacity: 0.3;
+
+            &-time {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+    &-information {
+        @include flex_mixins.center_j_d(space-between, column);
+        align-items: initial;
+        margin-top: 10px;
+        height: 40px;
+
+        @media screen and (max-width: 700px) {
+            margin-top: 8px;
+        }
+
+        &-videoName {
+            color: rgb(25, 32, 44);
+            font-size: clamp(16px, 50%, 18px);
+            font-weight: 700;
+        }
+        &-metricsContainer {
+            @include flex_mixins.center_j_d(space-between);
+            color: rgb(194, 194, 194);
+            font-size: 13px;
+            font-weight: 400;
+            &-views {
+            }
+            &-author {
+            }
+        }
+    }
+}
+@media (hover: hover) {
+    .big-video-information-videoName:hover {
+        text-decoration: underline;
+    }
+}
