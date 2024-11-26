@@ -2,24 +2,28 @@ header {
 }
 #header_firstPart {
     &_menu {
+        aspect-ratio: 20 / 17;
     }
     &_appLogo {
+        aspect-ratio: 116 / 25;
     }
 }
 #header_secondPart {
     &_wrapper {
         &_otherLogos {
-            img {
-            }
+            aspect-ratio: 175 / 32;
         }
         &_userIcon {
+            aspect-ratio: 1 / 1;
         }
     }
 }
 #search_container {
     &_field {
+        aspect-ratio: 830 / 44;
     }
     &_logo {
+        aspect-ratio: 1 / 1;
     }
 }
 aside {
@@ -61,10 +65,13 @@ aside {
     }
 }
 .section_navigation {
+    aspect-ratio: 66 / 28;
 }
 .small_videos {
 }
 .small_video {
+    aspect-ratio: 250 / 200;
+
     &_wallpaper {
     }
 }
@@ -81,8 +88,13 @@ aside {
 .big_videos {
 }
 .big_video {
+    aspect-ratio: 540 / 300;
+
     &_wallpaper {
     }
+}
+.other_subscribe_button {
+    aspect-ratio: 154 / 40;
 }
 footer {
 }
