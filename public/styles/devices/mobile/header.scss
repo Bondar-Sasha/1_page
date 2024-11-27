@@ -3,8 +3,14 @@
 
 @media screen and (max-width: 767px) {
     header {
-        padding: 10px 16px 10px 16px;
+        padding: 0px 16px;
         @include flex_mixins.center_j_d(space-between);
+        height: 60px;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
     }
     #header_firstPart {
         @include flex_mixins.center_j_d(center);
@@ -13,11 +19,12 @@
             display: none;
         }
         &_appLogo {
-            width: clamp(120px, 20vw, 140px);
+            width: clamp(116px, 20vw, 140px);
+            aspect-ratio: 116 / 25;
         }
     }
     #header_secondPart {
-        width: clamp(60px, 30vw, 150px);
+        width: clamp(60px, 30vw, 105px);
         @include flex_mixins.center_j_d(space-between);
         &_wrapper {
             &_otherLogos {
@@ -26,7 +33,7 @@
                 }
             }
             &_userIcon {
-                width: clamp(15px, 15vw, 50px);
+                width: clamp(15px, 15vw, 30px);
             }
         }
     }
@@ -37,7 +44,7 @@
             display: none;
         }
         &_logo {
-            width: clamp(10px, 8vw, 20px);
+            width: clamp(10px, 8vw, 15px);
         }
     }
 }
