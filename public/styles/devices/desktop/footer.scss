@@ -3,7 +3,12 @@
 
 @media screen and (min-width: 1440px) {
     footer {
+        // display: none;
+        height: 40px;
+
+        background-color: white;
     }
     #footer_icons {
+        display: none;
     }
 }
