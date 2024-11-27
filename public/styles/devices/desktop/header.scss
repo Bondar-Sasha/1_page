@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 1440px) {
     header {
-        padding: 0px 70px 0px 32px;
+        padding: 0px 70px 0px 15px;
         @include flex_mixins.center_j_d(space-between);
         background-color: white;
         height: 84px;
@@ -13,8 +13,9 @@
         left: 0;
     }
     #header_firstPart {
-        width: 9%;
+        width: 12.5%;
         min-width: 163px;
+        max-width: 200px;
         @include flex_mixins.center_j_d(space-between);
         &_menu {
             width: clamp(17px, 4vw, 20px);
@@ -26,10 +27,10 @@
         }
     }
     #header_secondPart {
-        width: 87.5%;
+        width: 86%;
         @include flex_mixins.center_j_d(space-between);
         &_wrapper {
-            width: 16.4%;
+            width: 19%;
             @include flex_mixins.center_j_d(space-between);
             &_otherLogos {
                 width: 66%;
@@ -56,36 +57,17 @@
         }
     }
     .header_icons_wrapper {
-        position: relative;
+        @include flex_mixins.center_j_d(center);
 
-        &::after {
-            content: ' ';
-            position: absolute;
-            display: block;
-            opacity: 0;
-            height: 50px;
-            top: -13.9px;
-            left: -13px;
+        height: 50px;
+
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+
+        &:hover {
             background-color: rgb(241, 241, 241);
-            transition: opacity 0.3s ease;
-            border-radius: 50%;
-            aspect-ratio: 1 / 1;
-            z-index: -1;
-        }
 
-        &:first-child::after {
-            top: -16px;
-            left: -14px;
-        }
-
-        &:last-child::after {
-            top: -11.5px;
-            left: -12px;
-        }
-
-        &:hover::after {
-            opacity: 1;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.5s ease;
         }
     }
 

@@ -4,13 +4,12 @@
 @media screen and (min-width: 1440px) {
     main {
         @include flex_mixins.center_j_d(initial);
-        padding: 30px 0px 0px 30px;
-        height: 90vh;
+        margin: 30px 10px 0px 490px;
 
         align-items: initial;
     }
     #main_content {
-        overflow-y: scroll;
+        // overflow-y: scroll;
         scrollbar-width: none;
         width: 88%;
         &_authorContent {

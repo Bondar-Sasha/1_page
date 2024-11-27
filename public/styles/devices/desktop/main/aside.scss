@@ -6,12 +6,12 @@
         @include flex_mixins.center_j_d(initial, column);
 
         overflow-y: scroll;
-        scrollbar-width: none;
+        // scrollbar-width: none;
         width: clamp(225px, 10%, 270px);
-
-        // position: sticky;
-        // top: 114px;
-        // left: 0;
+        height: 80vh;
+        position: fixed;
+        top: 114px;
+        left: 0;
         align-items: initial;
     }
     #aside_links {
@@ -40,8 +40,10 @@
         color: rgb(137, 137, 137);
         font-size: var(--font_16);
         cursor: pointer;
-        & > span:hover {
-            text-decoration: underline;
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
         }
 
         img {
@@ -56,8 +58,10 @@
         width: 159px;
         height: 324px;
         cursor: pointer;
-        & span:hover {
-            text-decoration: underline;
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
         }
         &_label {
             font-size: var(--font_18);

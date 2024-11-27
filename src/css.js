@@ -1,6 +1,7 @@
 import '../public/styles/normalize.css'
 import '../public/styles/index.scss'
 import '../public/styles/proportions.scss'
+// import '../public/data'
 // import '../public/styles/devices/shared.scss'
 
 import '../public/styles/components/big-video/styles.scss'
