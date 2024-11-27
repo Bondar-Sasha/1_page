@@ -11,7 +11,6 @@ html {
 }
 body {
     background: rgb(255, 255, 255);
-    overflow-y: hidden;
     @include flex_mixins.center_j_d(center, column);
 }
 body > * {
