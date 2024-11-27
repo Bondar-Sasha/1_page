@@ -12,6 +12,7 @@
         position: fixed;
         top: 114px;
         left: 0;
+        z-index: 100;
         align-items: initial;
     }
     #aside_links {
@@ -58,11 +59,7 @@
         width: 159px;
         height: 324px;
         cursor: pointer;
-        &:hover {
-            span {
-                text-decoration: underline;
-            }
-        }
+
         &_label {
             font-size: var(--font_18);
             color: rgb(0, 0, 0);
@@ -75,6 +72,11 @@
         }
     }
     .aside_sub {
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
         @include flex_mixins.center_j_d(initial);
         color: rgb(137, 137, 137);
 
