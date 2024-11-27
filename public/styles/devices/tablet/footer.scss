@@ -3,13 +3,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     footer {
-        // height: 64px;
-        // border-top: 1px solid rgb(241, 241, 241);
-        // @include flex_mixins.center_j_d(center);
+        height: 10px;
+        background-color: white;
     }
-    .aside_styled_link {
-    }
-
     #footer_icons {
         display: none;
     }
