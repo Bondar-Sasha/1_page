@@ -3,26 +3,90 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     aside {
-        display: none;
+        @include flex_mixins.center_j_d(initial, column);
+        padding-left: 30px;
+        overflow-y: scroll;
+        // scrollbar-width: none;
+        background-color: white;
+        width: 234px;
+        height: calc(100vh - 115px - 10px);
+        position: fixed;
+        top: 115px;
+        left: 0;
+
+        align-items: initial;
     }
     #aside_links {
+        @include flex_mixins.center_j_d(space-between, column);
+        align-items: initial;
+        height: 540px;
+        flex: 0 0 auto;
         &_major {
+            @include flex_mixins.center_j_d(space-between, column);
+            align-items: initial;
+            height: 117px;
+
             &_settingsLogoContainer {
+                color: red;
             }
         }
         &_other {
+            @include flex_mixins.center_j_d(space-between, column);
+            align-items: initial;
+            height: 363px;
         }
     }
     .aside_styled_link {
+        @include flex_mixins.center_j_d(initial);
+        color: rgb(137, 137, 137);
+        font-size: var(--font_16);
+        cursor: pointer;
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            margin-right: 15px;
+        }
     }
     #aside_subscriptions {
+        flex: 0 0 auto;
+        @include flex_mixins.center_j_d(space-between, column);
+        align-items: initial;
+        margin-top: 59px;
+        height: 324px;
+        cursor: pointer;
+
         &_label {
+            font-size: var(--font_18);
+            color: rgb(0, 0, 0);
+            font-weight: 700;
         }
         &_container {
+            height: 271px;
+            @include flex_mixins.center_j_d(space-between, column);
+            align-items: initial;
         }
     }
     .aside_sub {
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+        @include flex_mixins.center_j_d(initial);
+        color: rgb(137, 137, 137);
+
+        font-size: var(--font_16);
+        img {
+            margin-right: 10px;
+        }
     }
     #aside_otherLinks {
+        flex: 0 0 auto;
+        margin-top: 104px;
+        height: 20px;
     }
 }

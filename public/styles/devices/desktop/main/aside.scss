@@ -4,21 +4,22 @@
 @media screen and (min-width: 1440px) {
     aside {
         @include flex_mixins.center_j_d(initial, column);
-
+        padding-left: 30px;
         overflow-y: scroll;
-        scrollbar-width: none;
-        width: clamp(225px, 10%, 270px);
+        // scrollbar-width: none;
+        background-color: white;
+        width: 234px;
+        height: calc(100vh - 115px - 10px);
+        position: fixed;
+        top: 115px;
+        left: 0;
 
-        // position: sticky;
-        // top: 114px;
-        // left: 0;
         align-items: initial;
     }
     #aside_links {
         @include flex_mixins.center_j_d(space-between, column);
         align-items: initial;
         height: 540px;
-        width: clamp(134px, 10vw, 250px);
         flex: 0 0 auto;
         &_major {
             @include flex_mixins.center_j_d(space-between, column);
@@ -40,8 +41,10 @@
         color: rgb(137, 137, 137);
         font-size: var(--font_16);
         cursor: pointer;
-        & > span:hover {
-            text-decoration: underline;
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
         }
 
         img {
@@ -53,12 +56,9 @@
         @include flex_mixins.center_j_d(space-between, column);
         align-items: initial;
         margin-top: 59px;
-        width: 159px;
         height: 324px;
         cursor: pointer;
-        & span:hover {
-            text-decoration: underline;
-        }
+
         &_label {
             font-size: var(--font_18);
             color: rgb(0, 0, 0);
@@ -71,6 +71,11 @@
         }
     }
     .aside_sub {
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
         @include flex_mixins.center_j_d(initial);
         color: rgb(137, 137, 137);
 
@@ -82,7 +87,6 @@
     #aside_otherLinks {
         flex: 0 0 auto;
         margin-top: 104px;
-        width: 84px;
         height: 20px;
     }
 }

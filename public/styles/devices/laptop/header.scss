@@ -3,82 +3,72 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     header {
-        padding: 10px 16px 10px 16px;
+        padding: 0px 10px 0px 10px;
         @include flex_mixins.center_j_d(space-between);
+        background-color: white;
+        height: 84px;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
     #header_firstPart {
-        width: 14%;
-        min-width: 160px;
+        width: 12.5%;
+        min-width: 170px;
         @include flex_mixins.center_j_d(space-between);
-
         &_menu {
+            width: clamp(17px, 4vw, 20px);
         }
         &_appLogo {
-        }
-    }
-    .header_icons_wrapper {
-        position: relative;
-
-        &::after {
-            content: ' ';
-            position: absolute;
-            display: block;
-            opacity: 0;
-            height: 50px;
-            top: -13.9px;
-            left: -13px;
-            background-color: rgb(241, 241, 241);
-            transition: opacity 0.3s ease;
-            border-radius: 50%;
-            aspect-ratio: 1 / 1;
-            z-index: -1;
-        }
-
-        &:first-child::after {
-            top: -16px;
-            left: -14px;
-        }
-
-        &:last-child::after {
-            top: -11.5px;
-            left: -12px;
-        }
-
-        &:hover::after {
-            opacity: 1;
-            transition: opacity 0.3s ease;
+            width: clamp(116px, 4vw, 140px);
+            cursor: pointer;
         }
     }
     #header_secondPart {
         width: 80%;
+
         @include flex_mixins.center_j_d(space-between);
         &_wrapper {
             &_otherLogos {
                 display: none;
-                &_notificationContainer {
-                    position: relative;
-                    // &_logo {
-                    // }
-                    &_icon {
-                        top: -5px;
-                        left: 8px;
-                        position: absolute;
-                    }
-                }
             }
             &_userIcon {
+                width: clamp(35px, 4vw, 40px);
+                cursor: pointer;
             }
         }
     }
+    .header_icons_wrapper {
+        @include flex_mixins.center_j_d(center);
+        cursor: pointer;
+
+        height: 50px;
+
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
+
+        &:hover {
+            background-color: rgb(241, 241, 241);
+
+            transition: opacity 0.5s ease;
+        }
+    }
+
     #search_container {
         position: relative;
-        width: 90%;
+        width: 75%;
         @include flex_mixins.center_j_d(initial);
+        height: clamp(35px, 3vw, 40px);
 
         &_field {
-            width: inherit;
+            color: rgb(48, 56, 76);
+
+            font-weight: 400;
+            width: 100%;
             height: inherit;
-            padding: 12px 0 12px 23px;
+            padding: 12px 45px 12px 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
             font-size: var(--font_16);
             border-radius: 22px;
             background: rgb(235, 235, 235);
@@ -86,8 +76,9 @@
         }
         &_logo {
             position: absolute;
-            right: 13%;
-            width: 18.21px;
+            cursor: pointer;
+            right: 18px;
+            width: 16px;
         }
     }
 }
