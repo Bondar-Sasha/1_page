@@ -3,7 +3,29 @@
 
 @media screen and (max-width: 767px) {
     footer {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid rgb(241, 241, 241);
+        background-color: white;
+        @include flex_mixins.center_j_d(center);
     }
+    .aside_styled_link {
+        font-size: 10px;
+        color: rgb(137, 137, 137);
+        @include flex_mixins.center_j_d(center, column);
+    }
+    .aside_styled_link:first-child {
+        color: red;
+    }
+    #footer_icons {
+        width: 80%;
+
+        height: 70px;
+        @include flex_mixins.center_j_d(space-between);
+    }
+}
+@media screen and (max-width: 280px) {
     #footer_icons {
         display: none;
     }

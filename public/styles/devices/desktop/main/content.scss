@@ -16,6 +16,9 @@
         &_authorContent {
             display: flex;
             flex-direction: column;
+            & > span {
+                text-decoration: underline;
+            }
         }
         &_recommended {
             display: flex;
@@ -36,18 +39,29 @@
         font-size: var(--font_26);
         font-weight: 700;
         @include flex_mixins.center_j_d(space-between);
+        & > * {
+            cursor: pointer;
+        }
     }
     .section_inf {
         display: flex;
         align-items: center;
         justify-content: space-between;
         // width: 50px;
+        &_topicName {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
         &_authorLogo {
         }
         &_authorName {
             margin-left: 20px;
             font-size: 26px;
             font-weight: bold;
+            &:hover {
+                text-decoration: underline;
+            }
         }
         &_author_infForUser {
             color: rgb(194, 194, 194);
@@ -84,6 +98,7 @@
     }
     .other_subscribe_button {
         background-color: red;
+        cursor: pointer;
         color: white;
         text-align: center;
         font-size: var(--font_16);

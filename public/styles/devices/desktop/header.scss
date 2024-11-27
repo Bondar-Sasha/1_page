@@ -18,9 +18,11 @@
         @include flex_mixins.center_j_d(space-between);
         &_menu {
             width: clamp(17px, 4vw, 20px);
+            cursor: pointer;
         }
         &_appLogo {
             width: clamp(116px, 4vw, 140px);
+            cursor: pointer;
         }
     }
     #header_secondPart {
@@ -32,10 +34,14 @@
             &_otherLogos {
                 width: 66%;
                 @include flex_mixins.center_j_d(space-between);
+                & > * {
+                    cursor: pointer;
+                }
                 &_notificationContainer {
                     position: relative;
                     // &_logo {
                     // }
+
                     &_icon {
                         top: -5px;
                         left: 8px;
@@ -45,9 +51,44 @@
             }
             &_userIcon {
                 width: clamp(35px, 4vw, 40px);
+                cursor: pointer;
             }
         }
     }
+    .header_icons_wrapper {
+        position: relative;
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            display: block;
+            opacity: 0;
+            height: 50px;
+            top: -13.9px;
+            left: -13px;
+            background-color: rgb(241, 241, 241);
+            transition: opacity 0.3s ease;
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+            z-index: -1;
+        }
+
+        &:first-child::after {
+            top: -16px;
+            left: -14px;
+        }
+
+        &:last-child::after {
+            top: -11.5px;
+            left: -12px;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    }
+
     #search_container {
         position: relative;
         width: 52%;
@@ -70,6 +111,7 @@
         }
         &_logo {
             position: absolute;
+            cursor: pointer;
             right: 18px;
             width: 16px;
         }

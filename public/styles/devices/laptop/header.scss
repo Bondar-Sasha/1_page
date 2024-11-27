@@ -16,6 +16,39 @@
         &_appLogo {
         }
     }
+    .header_icons_wrapper {
+        position: relative;
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            display: block;
+            opacity: 0;
+            height: 50px;
+            top: -13.9px;
+            left: -13px;
+            background-color: rgb(241, 241, 241);
+            transition: opacity 0.3s ease;
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+            z-index: -1;
+        }
+
+        &:first-child::after {
+            top: -16px;
+            left: -14px;
+        }
+
+        &:last-child::after {
+            top: -11.5px;
+            left: -12px;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+    }
     #header_secondPart {
         width: 80%;
         @include flex_mixins.center_j_d(space-between);

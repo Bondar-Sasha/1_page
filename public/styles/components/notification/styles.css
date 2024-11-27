@@ -6,6 +6,7 @@
     content: attr(data-count);
     position: absolute;
     display: flex;
+    z-index: 1;
     align-items: center;
     justify-content: center;
     color: white;

@@ -39,6 +39,10 @@
         @include flex_mixins.center_j_d(initial);
         color: rgb(137, 137, 137);
         font-size: var(--font_16);
+        cursor: pointer;
+        & > span:hover {
+            text-decoration: underline;
+        }
 
         img {
             margin-right: 15px;
@@ -51,6 +55,10 @@
         margin-top: 59px;
         width: 159px;
         height: 324px;
+        cursor: pointer;
+        & span:hover {
+            text-decoration: underline;
+        }
         &_label {
             font-size: var(--font_18);
             color: rgb(0, 0, 0);
