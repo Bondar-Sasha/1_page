@@ -4,7 +4,7 @@
 @media screen and (min-width: 1440px) {
     aside {
         @include flex_mixins.center_j_d(initial, column);
-
+        margin-left: 50px;
         overflow-y: scroll;
         // scrollbar-width: none;
         width: clamp(225px, 10%, 270px);
