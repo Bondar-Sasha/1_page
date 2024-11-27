@@ -56,6 +56,22 @@ module.exports = env => ({
                 },
             ],
         }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'public', 'styles', 'components', 'notification', 'data'),
+                    to: path.resolve(__dirname, 'docs', 'styles', 'components', 'notification', 'data'),
+                },
+            ],
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'public', 'styles', 'components', 'control-arrows', 'data'),
+                    to: path.resolve(__dirname, 'docs', 'styles', 'components', 'control-arrows', 'data'),
+                },
+            ],
+        }),
     ],
 
     // devtool: 'source-map',
